@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Page</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f0f4f8;
+      color: #333;
+    }
+    /* Close Button */
+    .close-btn {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      border: none;
+      font-size: 20px;
+      font-weight: bold;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s ease;
+      z-index: 9999;
+    }
+    .close-btn:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #4a90e2, #357ABD);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .hero img {
+      max-width: 150px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .btn-contact {
+      background-color: #ffd700;
+      color: #333;
+      border: none;
+      padding: 12px 28px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .btn-contact:hover {
+      background-color: #e6c200;
+    }
+
+    /* About Section */
+    .about {
+      max-width: 800px;
+      margin: 60px auto 80px;
+      padding: 0 20px;
+    }
+    .about h2 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      color: #222;
+      text-align: center;
+    }
+    .about p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.7;
+      text-align: justify;
+      white-space: pre-line;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero img {
+        max-width: 120px;
+        margin-bottom: 20px;
+      }
+      .btn-contact {
+        font-size: 16px;
+        padding: 10px 24px;
+      }
+      .about h2 {
+        font-size: 2rem;
+      }
+      .about p {
+        font-size: 1rem;
+      }
+    }
+    .about h3 {
+      font-size: 1.5rem;
+      margin-top: 30px;
+      margin-bottom: 12px;
+      color: #2c3e50;
+    }
+    footer {
+      background-color: #357ABD; 
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+    .footer-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #357ABD;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #e63e3e;
+}
+
+  </style>
+</head>
+<body>
+
+ <!-- Close Button -->
+  <a href="waqid.html" class="back-btn">⬅ Back</a>
+
+  <section class="hero">
+    <img src="2e308efd-1b28-4c93-b03c-015e98a25d7c-removebg-preview.png" alt="Logo" />
+    <a href="https://wa.me/923555298692" target="_blank" rel="noopener noreferrer">
+      <button class="btn-contact">Contact Us</button>
+    </a>
+    <h3 style="text-align: center; color: #230e4e; padding-top: 30px;">Web Developer</h3>
+    
+  </section>
+
+  <section class="about">
+    <h2>About</h2>
+    <h3>Introduction</h3>
+    <p>
+      Web development is a dynamic and ever-evolving field that forms the backbone of the internet. It combines creativity with technology to create interactive and engaging websites and applications accessible worldwide.
+    </p>
+    <h3>Front-end Development</h3>
+    <p>
+      Front-end development focuses on designing the user interface and experience. It involves HTML, CSS, and JavaScript to build visually appealing layouts that work seamlessly across all devices. Tools and frameworks like React, Vue, and Angular have revolutionized how developers create responsive and fast websites.
+    </p>
+    <h3>Back-end Development</h3>
+    <p>
+      The back-end handles the server-side logic, databases, and application architecture. Languages like Python, Node.js, PHP, and Ruby, along with databases such as MySQL and MongoDB, help manage data and ensure secure communication between users and servers.
+    </p>
+    <h3>Full-stack Development</h3>
+    <p>
+      Full-stack developers combine both front-end and back-end skills to build complete applications. Their ability to understand the entire process ensures smoother development cycles and better coordination between the different layers of a web project.
+    </p>
+    <h3>Continuous Learning and Growth</h3>
+    <p>
+      The web development landscape changes rapidly. New tools, frameworks, and best practices emerge frequently, encouraging developers to continually learn and adapt. This growth mindset is essential for creating modern, scalable, and efficient web solutions.
+    </p>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 ENA. All rights reserved.</p>
+      <p>Designed and developed with ❤️ by You. <br>Contact us, feel friendly😊 </p>
+    </div>
+  </footer>
+
+
+
+</body>
+</html>
