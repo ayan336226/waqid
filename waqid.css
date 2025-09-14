@@ -88,7 +88,10 @@
     /* Hero Section */
     .hero {
       height: 100vh;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
+        background:    linear-gradient(100deg, rgba(19, 32, 46, 0.9), rgba(68, 86, 130, 0.9)),
+    url("WhatsApp\ Image\ 2025-08-18\ at\ 11.11.12\ AM.jpeg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
       display: flex;
       flex-direction: column;
       justify-content: center;
